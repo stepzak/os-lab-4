@@ -1,0 +1,3 @@
+Sum of 3 numbers: 60
+Sum of 3 numbers: 10
+Sum of 4 numbers: 80
