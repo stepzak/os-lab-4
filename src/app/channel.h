@@ -12,7 +12,7 @@ typedef struct {
     atomic_uint child_ready;
 } channel_t;
 
-static inline void channel_init(channel_t *channel) {
+static void channel_init(channel_t *channel) {
     spsc_init(&channel->requests);
     spsc_init(&channel->responses);
     atomic_init(&channel->cancelled, 0);
